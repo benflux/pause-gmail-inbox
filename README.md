@@ -18,7 +18,7 @@ that you aren't afraid to "get under the hood" to make some adjustments.
 
 1. Install clasp: `npm install -g @google/clasp` OR `yarn global add @google/clasp`
 2. Make a directory where the project will live: `mkdir unpause-inbox && cd unpause-inbox` 
-3. Clone the project using your favorite tool: `git clone https://github.com/benflux/pause-gmail-inbox.git`
+3. Clone the project using your favorite tool: `git clone https://github.com/benflux/pause-gmail-inbox.git .`
 4. Create the script: `clasp create --type script --title my-unpause-inbox`
 5. Edit the appscript.json file to change the timezone to match your timezone. You might have
    to use your google-fu to figure out the correct time zone, but I have confidence that you
