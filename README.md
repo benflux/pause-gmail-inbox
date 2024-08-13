@@ -18,8 +18,8 @@ that you aren't afraid to "get under the hood" to make some adjustments.
 
 1. Install clasp: `npm install -g @google/clasp` OR `yarn global add @google/clasp`
 2. Make a directory where the project will live: `mkdir unpause-inbox && cd unpause-inbox` 
-3. Create the script: `clasp create --type script --title my-unpause-inbox`
-4. Clone the project using your favorite tool: `git clone https://github.com/accountingnerd/pause-gmail-inbox.git`
+3. Clone the project using your favorite tool: `git clone https://github.com/benflux/pause-gmail-inbox.git`
+4. Create the script: `clasp create --type script --title my-unpause-inbox`
 5. Edit the appscript.json file to change the timezone to match your timezone. You might have
    to use your google-fu to figure out the correct time zone, but I have confidence that you
    can do it!
@@ -27,9 +27,11 @@ that you aren't afraid to "get under the hood" to make some adjustments.
 7. Edit the script properties of your script project at [https://script.google.com/](https://script.google.com/). You'll 
    need two properties:
 
-    * `UNPAUSE_ON_WEEKENDS`: Valid values are 'true' and 'false' (no quotes).
-    * `UPAUSE_TIME`: Use the 24 hour clock to pick a time. If you use AM/PM, and want to 
-      unpause at 4:30pm, then set the value to 16:30.
+    * `UNPAUSE_DAYS`: Days of week you want to unpause. Accepts multiple days and values are comma separated.
+      Valid values are: SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY
+    * `UPAUSE_TIME`: Accepts multiple times and values are comma separated.
+      Use the 24 hour clock to pick a time. If you use AM/PM, and want to 
+      unpause at 4:30pm and 8:30pm, then set the value to 16:30,20:30. 
    
    NOTE: You had better format things correctly. This is running on your account, and if you mess
    up, it's all on you to fix it. Nobody is going to come rescue you.
