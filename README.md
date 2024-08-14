@@ -29,7 +29,7 @@ that you aren't afraid to "get under the hood" to make some adjustments.
 
     * `UNPAUSE_DAYS`: Days of week you want to unpause. Accepts multiple days and values are comma separated.
       Valid values are: SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY
-    * `UPAUSE_TIME`: Accepts multiple times and values are comma separated.
+    * `UNPAUSE_TIME`: Accepts multiple times and values are comma separated.
       Use the 24 hour clock to pick a time. If you use AM/PM, and want to 
       unpause at 4:30pm and 8:30pm, then set the value to 16:30,20:30. 
    
